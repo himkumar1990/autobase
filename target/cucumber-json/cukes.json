@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "add-two-numbers;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 74223819,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "two numbers 2 and 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "1",
+                  "offset": 18
+                }
+              ],
+              "location": "Sum.two_numbers_and(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14104,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the numbers are added",
+            "match": {
+              "location": "Sum.the_numbers_are_added()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1169632,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the sum should be 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 18
+                }
+              ],
+              "location": "Sum.the_sum_should_be(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@autotest-1"
+          }
+        ]
+      }
+    ],
+    "name": "add two numbers",
+    "description": "",
+    "id": "add-two-numbers",
+    "keyword": "Feature",
+    "uri": "sum.feature"
+  }
+]

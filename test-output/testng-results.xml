@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="project" duration-ms="345" started-at="2019-01-26T18:27:45Z" finished-at="2019-01-26T18:27:46Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="ProjectCucumberRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.integra.autobase.runner.RunCukesTest@343f4d3d]" name="feature" class="com.integra.autobase.runner.ProjectCucumberRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="cucumbertests" duration-ms="345" started-at="2019-01-26T18:27:45Z" finished-at="2019-01-26T18:27:46Z">
+      <class name="com.integra.autobase.runner.RunCukesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.integra.autobase.runner.RunCukesTest@343f4d3d]" name="setup" is-config="true" duration-ms="189" started-at="2019-01-26T18:27:45Z" finished-at="2019-01-26T18:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.integra.autobase.runner.RunCukesTest@343f4d3d]" name="feature" duration-ms="94" started-at="2019-01-26T18:27:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-26T18:27:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add two numbers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.integra.autobase.runner.RunCukesTest@343f4d3d]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-26T18:27:46Z" finished-at="2019-01-26T18:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.integra.autobase.runner.RunCukesTest -->
+    </test> <!-- cucumbertests -->
+  </suite> <!-- project -->
+</testng-results>
