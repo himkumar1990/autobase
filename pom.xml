@@ -15,8 +15,28 @@
     <maven.compiler.source>1.8</maven.compiler.source>
  	<maven.compiler.target>1.8</maven.compiler.target>
  	<cucumberVersion>1.2.5</cucumberVersion>
+ 	<testNgVersion>6.14.3</testNgVersion>
   </properties>
-  
+  <build>
+	<pluginManagement>
+	<plugins>
+ 	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <groups>cucumber</groups>
+          <excludedGroups></excludedGroups>
+          <suiteXmlFiles>
+            <suiteXmlFile>testconfig/${xmlFile}</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+	</plugins>
+	</pluginManagement>	
+  </build>
+	
+
  <dependencies>
  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -53,9 +73,9 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.14.3</version>
-    <scope>test</scope>
+    <version>${testNgVersion}</version>
+    <scope>compile</scope>
 </dependency>
+</dependencies>
 
- </dependencies>
  </project>
