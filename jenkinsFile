@@ -9,6 +9,8 @@ properties([
 
 ])
 
+properties([pipelineTrigggers([cron('H/5 * * * *')])])
+
 
 pipeline {
 
