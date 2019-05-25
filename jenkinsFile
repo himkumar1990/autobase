@@ -22,7 +22,10 @@ pipeline {
 			steps{
 				sh 'echo compile step'
 				echo "username is ${username}"
+				timeout(time:10,unit:'SECONDS'"){
+
 				input 'continue to next stage ?'
+				}
 			}
 		}
 
