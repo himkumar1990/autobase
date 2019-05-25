@@ -21,10 +21,11 @@ pipeline {
 		stage('Compile Stage'){
 			steps{
 				sh 'echo compile step'
+				input 'continue to next stage ?'
 			}
 		}
 
-		input 'continue to next stage ?'
+		
 		stage('Testing Stage'){
 			steps{
 				sh 'echo test step'
