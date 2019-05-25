@@ -12,6 +12,7 @@ properties([
 properties([pipelineTriggers([githubPush()])])
 
 
+
 pipeline {
 
 	agent any 
@@ -22,6 +23,8 @@ pipeline {
 				sh 'echo compile step'
 			}
 		}
+
+		input 'continue to next stage ?'
 		stage('Testing Stage'){
 			steps{
 				sh 'echo test step'
