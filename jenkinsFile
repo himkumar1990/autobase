@@ -21,7 +21,7 @@ pipeline {
 		stage('Compile Stage'){
 			steps{
 				sh 'echo compile step'
-				sh 'echo username is ${params.username}'
+				echo username is ${username}
 				input 'continue to next stage ?'
 			}
 		}
