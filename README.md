@@ -1,2 +1,2 @@
 # autobase
-new maven cucumber project added
+new maven cucumber project
