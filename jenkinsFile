@@ -9,7 +9,7 @@ properties([
 
 ])
 
-properties([pipelineTrigggers([cron('H/5 * * * *')])])
+properties([pipelineTriggers([cron('H/5 * * * *')])])
 
 
 pipeline {
