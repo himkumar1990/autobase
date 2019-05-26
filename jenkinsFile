@@ -33,6 +33,7 @@ pipeline {
 		stage('Testing Stage'){
 			steps{
 				sh 'cd ..'
+				sh 'ls -l'
 				sh 'rm -r cucumber*/'
 			}
 		}
