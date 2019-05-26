@@ -39,6 +39,7 @@ pipeline {
 		stage('cleanup workspace'){
 			steps{
 				cleanWs()
+				rm -r cucumber*
 			}
 		}
 	}
