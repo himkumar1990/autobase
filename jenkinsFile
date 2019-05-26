@@ -35,5 +35,11 @@ pipeline {
 				sh 'echo test step'
 			}
 		}
+		
+		stage('cleanup workspace'){
+			steps{
+				cleanWs()
+			}
+		}
 	}
 }
